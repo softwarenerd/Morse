@@ -1,11 +1,8 @@
-# audio_recorder/recorder.py
-import os
-import time
-import subprocess
-from audio_recorder.audio_recorder import AudioRecorder
-from openai import OpenAI
+# code_generator/code_generator.py
 import numpy as np
 import soundfile as sf
+from audio_recorder.audio_recorder import AudioRecorder
+from openai import OpenAI
 
 MORSE_CODE = {
     "A": ".-",
@@ -50,7 +47,7 @@ MORSE_CODE = {
 }
 
 class CodeGenerator:
-    def __init__(self, wpm, freq, sample_rate, filename="morse.wav"):
+    def __init__(self, wpm, freq, sample_rate, filename):
         self.wpm = wpm
         self.freq = freq
         self.sample_rate = sample_rate
