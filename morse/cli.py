@@ -55,7 +55,6 @@ def convert_text_to_morse_code(client, transcript_text):
     )
     return response.choices[0].message.content.strip()
 
-
 def convert_to_morse_code_audio_file(client, code_generator, messages):
     while True:
         response = client.chat.completions.create(
