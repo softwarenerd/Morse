@@ -122,17 +122,17 @@ def main():
 
 
         # Transcribe the audio and convert it to Morse code.
-        print("\nTranscribing audio:")
+        print("\nTranscribing audio into text using whisper-1:")
         transcript = transcribe_audio(client, AUDIO_FILE_PATH)
         print(f"   Transcript is: '{transcript.text}'")
 
         # Convert the transcript to Morse code text.
-        print(f"\nConverting '{transcript.text}' to Morse code text:")
+        print(f"\nConverting '{transcript.text}' to Morse code text using gpt-4o":")
         morse_code = convert_text_to_morse_code(client, transcript.text)
         print(f"   Morse code text is: '{morse_code}'")
 
         # Convert the Morse code text to the Morse code audio file.
-        print(f"\nConverting '{morse_code}' to Morse code audio:")
+        print(f"\nConverting '{morse_code}' to Morse code audio using gpt-4o and a tool call:")
         convert_to_morse_code_audio_file(
             client,
             code_generator,
