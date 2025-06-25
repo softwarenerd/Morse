@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.dylib
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# macOS system files
+.DS_Store
+
+# Audio artifacts
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+# Transcripts and output
+*.txt
+*.log
+*.json
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# mypy, pylint, pytest
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Local builds
+build/
+dist/
+*.egg-info/
+
+# Secrets (if you ever use dotenv or config)
+.env
+.env.*
+*.key
+*.pem
