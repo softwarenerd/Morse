@@ -127,7 +127,7 @@ def main():
         print(f"   Transcript is: '{transcript.text}'")
 
         # Convert the transcript to Morse code text.
-        print(f"\nConverting '{transcript.text}' to Morse code text using gpt-4o":")
+        print(f"\nConverting '{transcript.text}' to Morse code text using gpt-4o:")
         morse_code = convert_text_to_morse_code(client, transcript.text)
         print(f"   Morse code text is: '{morse_code}'")
 
